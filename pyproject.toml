@@ -1,0 +1,17 @@
+[project]
+name = "baloto-com"
+version = "2.1.1"
+description = "Applicacion para calcular datos estadisticos en los juegos Miloto y Baloto"
+authors = [
+    {name = "Dani Vainstein",email = "solmarkn@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
