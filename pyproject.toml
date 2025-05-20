@@ -41,6 +41,8 @@ Repository = "https://github.com/daniv/baloto-com.git"
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.5"
 pytest-cov = "^6.1.1"
+allure-pytest = "^2.14.2"
+pytest-xdist = "^3.6.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -57,6 +59,10 @@ furo = "^2024.8.6"
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.black]
+line-length = 100
+verbose = true
+
 [tool.mypy]
 strict = true
 files = ["src", "tests"]
@@ -69,6 +75,10 @@ python_files = ["tests_*.py"]
 python_functions = ["*_test"]
 norecursedirs = ["src", ".idea", ".pytest_cache"]
 enable_assertion_pass_hook = true
+addopts = [
+    "--alluredir", "allure-results",
+    "--clean-alluredir"
+]
 
 
 [tool.baloto]

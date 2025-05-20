@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from core.cleo._utils import find_similar_names
+from baloto.core.cleo.utils import find_similar_names
 
 
 class CleoError(Exception):

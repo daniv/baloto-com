@@ -2,7 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from core.cleo.exceptions import CleoLogicError
+from baloto.core.cleo.exceptions import CleoLogicError
+from baloto.core.cleo.exceptions import CleoValueError
 
 
 class Argument:
@@ -18,6 +19,11 @@ class Argument:
         description: str | None = None,
         default: Any | None = None,
     ) -> None:
+        name = name.strip()
+        if not name:
+            raise CleoValueError("An argument name cannot be empty")
+        if " " in name:
+            raise CleoValueError("An argument name cannot have withspace")
         self._name = name
         self._required = required
         self._is_list = is_list

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from core.cleo.helpers import tokenize
-from core.cleo.io.inputs.argv_input import ArgvInput
+from baloto.core.cleo.helpers import tokenize
+from baloto.core.cleo.io.inputs.argv_input import ArgvInput
 
 
 class StringInput(ArgvInput):

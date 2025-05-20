@@ -10,13 +10,13 @@ from typing import TYPE_CHECKING
 from typing import TextIO
 from typing import cast
 
-from core.cleo.io.outputs.output import Output
-from core.cleo.io.outputs.output import Verbosity
+from baloto.core.cleo.io.outputs.output import Output
+from baloto.core.cleo.io.outputs.output import Verbosity
 
 
 if TYPE_CHECKING:
-    from core.cleo.formatters.formatter import Formatter
-    from core.cleo.io.outputs.section_output import SectionOutput
+    from baloto.core.cleo.formatters.formatter import Formatter
+    from baloto.core.cleo.io.outputs.section_output import SectionOutput
 
 
 class StreamOutput(Output):

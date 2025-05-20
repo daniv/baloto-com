@@ -5,14 +5,14 @@ import sys
 from typing import TYPE_CHECKING
 from typing import Any
 
-from core.cleo.exceptions import CleoLogicError
-from core.cleo.io.inputs.option import Option
+from baloto.core.cleo.exceptions import CleoLogicError
+from baloto.core.cleo.io.inputs.option import Option
 
 
 if TYPE_CHECKING:
     from collections.abc import Sequence
 
-    from core.cleo.io.inputs.argument import Argument
+    from baloto.core.cleo.io.inputs.argument import Argument
 
 
 class Definition:

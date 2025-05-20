@@ -5,13 +5,13 @@ import sys
 from typing import TYPE_CHECKING
 from typing import Any
 
-from core.cleo.exceptions import CleoNoSuchOptionError
-from core.cleo.exceptions import CleoRuntimeError
-from core.cleo.io.inputs.input import Input
+from baloto.core.cleo.exceptions import CleoNoSuchOptionError
+from baloto.core.cleo.exceptions import CleoRuntimeError
+from baloto.core.cleo.io.inputs.input import Input
 
 
 if TYPE_CHECKING:
-    from core.cleo.io.inputs.definition import Definition
+    from baloto.core.cleo.io.inputs.definition import Definition
 
 
 class ArgvInput(Input):

@@ -10,15 +10,15 @@ from typing import final
 from typing import cast
 
 from baloto.core.cleo.commands.completions_command import CompletionsCommand
-from core.cleo.commands.help_command import HelpCommand
-from core.cleo.commands.list_command import ListCommand
-from core.cleo.events.console_command_event import ConsoleCommandEvent
-from core.cleo.events.console_error_event import ConsoleErrorEvent
-from core.cleo.events.console_events import COMMAND
-from core.cleo.events.console_events import ERROR
-from core.cleo.events.console_events import TERMINATE
-from core.cleo.events.console_terminate_event import ConsoleTerminateEvent
-from core.cleo.exceptions import CleoCommandNotFoundError
+from baloto.core.cleo.commands.help_command import HelpCommand
+from baloto.core.cleo.commands.list_command import ListCommand
+from baloto.core.cleo.events.console_command_event import ConsoleCommandEvent
+from baloto.core.cleo.events.console_error_event import ConsoleErrorEvent
+from baloto.core.cleo.events.console_events import COMMAND
+from baloto.core.cleo.events.console_events import ERROR
+from baloto.core.cleo.events.console_events import TERMINATE
+from baloto.core.cleo.events.console_terminate_event import ConsoleTerminateEvent
+from baloto.core.cleo.exceptions import CleoCommandNotFoundError
 from core.cleo.exceptions import CleoError
 from core.cleo.exceptions import CleoLogicError
 from core.cleo.exceptions import CleoNamespaceNotFoundError

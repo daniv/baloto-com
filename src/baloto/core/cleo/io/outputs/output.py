@@ -3,14 +3,14 @@ from __future__ import annotations
 from enum import Enum
 from typing import TYPE_CHECKING
 
-from core.cleo._utils import strip_tags
-from core.cleo.formatters.formatter import Formatter
+from baloto.core.cleo._utils import strip_tags
+from baloto.core.cleo.formatters.formatter import Formatter
 
 
 if TYPE_CHECKING:
     from collections.abc import Iterable
 
-    from core.cleo.io.outputs.section_output import SectionOutput
+    from baloto.core.cleo.io.outputs.section_output import SectionOutput
 
 
 class Verbosity(Enum):

@@ -2,16 +2,16 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from core.cleo.io.outputs.output import Type as OutputType
-from core.cleo.io.outputs.output import Verbosity
+from baloto.core.cleo.io.outputs.output import Type as OutputType
+from baloto.core.cleo.io.outputs.output import Verbosity
 
 
 if TYPE_CHECKING:
     from collections.abc import Iterable
 
-    from core.cleo.io.inputs.input import Input
-    from core.cleo.io.outputs.output import Output
-    from core.cleo.io.outputs.section_output import SectionOutput
+    from baloto.core.cleo.io.inputs.input import Input
+    from baloto.core.cleo.io.outputs.output import Output
+    from baloto.core.cleo.io.outputs.section_output import SectionOutput
 
 
 class IO:

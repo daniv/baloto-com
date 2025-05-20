@@ -3,8 +3,8 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from importlib import import_module
 
-from core.cleo.exceptions import CleoLogicError
-from core.cleo.loaders.factory_command_loader import FactoryCommandLoader
+from baloto.core.cleo.exceptions import CleoLogicError
+from baloto.core.cleo.loaders.factory_command_loader import FactoryCommandLoader
 
 if TYPE_CHECKING:
     from collections.abc import Callable

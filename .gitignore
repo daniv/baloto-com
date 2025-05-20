@@ -250,3 +250,7 @@ fabric.properties
 
 # PyPI configuration file
 .pypirc
+
+# allure
+tests/allure-results/
+tests/allure-report/

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import Any
 from typing import ClassVar
 
-from core.cleo.commands.command import Command as CleoCommand
+from baloto.core.cleo.commands.command import Command as CleoCommand
 from core.cleo.exceptions import CleoValueError
 
 if TYPE_CHECKING:

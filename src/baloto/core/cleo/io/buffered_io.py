@@ -3,13 +3,13 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from typing import cast
 
-from core.cleo.io.inputs.string_input import StringInput
-from core.cleo.io.io import IO
-from core.cleo.io.outputs.buffered_output import BufferedOutput
+from baloto.core.cleo.io.inputs.string_input import StringInput
+from baloto.core.cleo.io.io import IO
+from baloto.core.cleo.io.outputs.buffered_output import BufferedOutput
 
 
 if TYPE_CHECKING:
-    from core.cleo.io.inputs.input import Input
+    from baloto.core.cleo.io.inputs.input import Input
 
 
 class BufferedIO(IO):

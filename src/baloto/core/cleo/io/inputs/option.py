@@ -4,8 +4,8 @@ import re
 
 from typing import Any
 
-from core.cleo.exceptions import CleoLogicError
-from core.cleo.exceptions import CleoValueError
+from baloto.core.cleo.exceptions import CleoLogicError
+from baloto.core.cleo.exceptions import CleoValueError
 
 
 class Option:
@@ -26,8 +26,12 @@ class Option:
         if name.startswith("--"):
             name = name[2:]
 
+        name = name.strip()
         if not name:
             raise CleoValueError("An option name cannot be empty")
+
+        if " " in name:
+            raise CleoValueError("An option name cannot have withspace")
 
         if shortcut is not None:
             shortcuts = re.split(r"\|-?", shortcut.lstrip("-"))

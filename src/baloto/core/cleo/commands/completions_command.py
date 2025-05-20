@@ -12,9 +12,9 @@ from typing import TYPE_CHECKING
 from typing import ClassVar
 from typing import cast
 
-from core.cleo import helpers
-from core.cleo._compat import shell_quote
-from core.cleo.commands.command import Command
+from baloto.core.cleo import helpers
+from baloto.core.cleo._compat import shell_quote
+from baloto.core.cleo.commands.command import Command
 from core.cleo.commands.completions.templates import TEMPLATES
 from core.cleo.exceptions import CleoRuntimeError
 

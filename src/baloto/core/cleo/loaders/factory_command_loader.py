@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from collections.abc import Callable
 
-from core.cleo.commands.command import Command
-from core.cleo.exceptions import CleoCommandNotFoundError
-from core.cleo.loaders.command_loader import CommandLoader
+from baloto.core.cleo.commands.command import Command
+from baloto.core.cleo.exceptions import CleoCommandNotFoundError
+from baloto.core.cleo.loaders.command_loader import CommandLoader
 
 
 Factory = Callable[[], Command]

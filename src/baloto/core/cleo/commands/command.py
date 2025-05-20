@@ -8,11 +8,13 @@ from typing import ClassVar
 from typing import cast
 
 from baloto.core.cleo.exceptions import CleoError
+
 # from baloto_com.core.cleo.formatters.style import Style
 from baloto.core.cleo.io.inputs.definition import Definition
 from baloto.core.cleo.io.inputs.string_input import StringInput
 from baloto.core.cleo.io.null_io import NullIO
 from baloto.core.cleo.io.outputs.output import Verbosity
+
 # from baloto_com.core.cleo.ui.table_separator import TableSeparator
 
 
@@ -24,6 +26,7 @@ if TYPE_CHECKING:
     from baloto.core.cleo.io.inputs.argument import Argument
     from baloto.core.cleo.io.inputs.option import Option
     from baloto.core.cleo.io.io import IO
+
     # from baloto_com.core.cleo.ui.progress_bar import ProgressBar
     # from baloto_com.core.cleo.ui.progress_indicator import ProgressIndicator
     # from baloto_com.core.cleo.ui.question import Question

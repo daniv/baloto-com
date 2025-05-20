@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from core.cleo.io.inputs.argument import Argument
-from core.cleo.io.inputs.option import Option
+from baloto.core.cleo.io.inputs.argument import Argument
+from baloto.core.cleo.io.inputs.option import Option
 
 
 def argument(

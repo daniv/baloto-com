@@ -5,10 +5,10 @@ import re
 from typing import Any
 from typing import TextIO
 
-from core.cleo._compat import shell_quote
-from core.cleo.exceptions import CleoMissingArgumentsError
-from core.cleo.exceptions import CleoValueError
-from core.cleo.io.inputs.definition import Definition
+from baloto.core.cleo._compat import shell_quote
+from baloto.core.cleo.exceptions import CleoMissingArgumentsError
+from baloto.core.cleo.exceptions import CleoValueError
+from baloto.core.cleo.io.inputs.definition import Definition
 
 
 class Input:

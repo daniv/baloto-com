@@ -5,8 +5,8 @@ import math
 from typing import TYPE_CHECKING
 from typing import TextIO
 
-from core.cleo.io.outputs.output import Verbosity
-from core.cleo.io.outputs.stream_output import StreamOutput
+from baloto.core.cleo.io.outputs.output import Verbosity
+from baloto.core.cleo.io.outputs.stream_output import StreamOutput
 
 # from core.cleo.terminal import Terminal
 
